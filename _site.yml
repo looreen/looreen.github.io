@@ -1,0 +1,12 @@
+name: "looreen.github.io"
+title: "Looreen's Space"
+description: |
+  Looreen's Space
+output_dir: "."
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+output: distill::distill_article
