@@ -1,0 +1,45 @@
+---
+title: "How I automized my family's cashbook"
+description: |
+  I found manual cashbook writing tiring, so I created a R Shiny App.
+date: 07-06-2020
+output:
+  distill::distill_article:
+    self_contained: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+The first step towards personal wealth is keeping track on one's spending, that's as much as every finance coach will tell you. In Germany, the 'schwaebische Hausfrau' (Swabonian stay at home mom) is famous for not spending more than she has. 
+
+So, to keep track of how much we are spending as a family and on what, I kept a traditional cashbook: written by hand, every month on one piece of paper, kept in a folder in the kitchen. Useful, but tiring. Every month (or to be fair, every two months), I sat there and copied entries from my mobile banking apps. At one point, I decided that this is a nice opportunity to create a (private) R Shiny app. (Of course, I could have used one of the ready made solutions, but I'm not a huge fan of Excel.)
+
+The final versions looks like this: In the sidebar on the left, I choose the month I want to look into, what I want to compare it to and whether or not I want to include the rent. 
+
+In the main panel, I then get a graph, comparing the chosen month to the same month a year earlier, the month before or last year's average, with spendings sorted into categories. The table below the graphs shows expenditures that could not be classified. The last information is whether we stayed in budget in the particular month, the number is unrelated to the comparison month and just counts expenditures against income. 
+
+## How and why I did what I did
+
+The input data are collected from our family bank account provider, who offers exporting overviews as CSVs. Those are read in and imported as needed. 
+
+To sort expenditures into categories is useful. I am not interested in every single purchase but I want to know how much we spend in May 2019 on groceries and how this compares to the expenditures for children's shoes (new parents beware, I'm not exaggerating saying that it's sometimes the same amount!). For this task, I wrote rules that use regular expressions: If the receiver of the money is Rewe, Edeka or Spar, it's groceries; if it says something like Aral we most likely refueled the car (even if we also bought a cheese bread roll) and Kinderschuhladen is definitely associated with kids expenditures. 
+
+These categorized expenditures are then summed up, plotted and compared to the expenditures of other months. The balance of the account is checked and displayed. 
+
+Everything that is classified as 'Other' is displayed below the plot - this gives room for inspection. I might want to add a regular expression for future use or see immediately that exceptional spendings like a new dish washer spiked up expenditures on this category in the plot. 
+
+The big advantage to keeping a cashbook in an application like this rather than doing it manually is to make it better comparable. Sometimes I am just interested how the month compares the same time last year. Did we spend more on Christmas presents in 2018 then 2019? Did keeping a cash book really lower overall costs, as a financial coach would suggest (Spoiler: It did!)?
+
+## What I learned - or what I might adjust 
+
+1. It would be interesting to base the classification of expenditures not on explicit rules but a machine learning algorithm. Neural networks might be suitable for this task. I chose against doing it in this version as the focus of my learning was on RShiny. Besides that, as a family we are shopping mostly in shops close to our home and these will always be more or less the same, except when we are traveling (which we don't do as much as we liked). Rules are therefore quite efficient at solving the task. Displaying everything in the Other category, makes it easy to see shop names that might belong to a certain category but I have missed. 
+
+2. Shiny makes it necessary to give all months in the side bar manually. In the future, it would be nice to have this slide down menu adjust automatically with the month. Now it is hand work to avoid errors when I want to compare a month that hasn't passed so far and we therefore do not yet have data for. 
+
+3. Exploring and comparing single categories would be useful, too. How much do we spend on presents and when? We could then keep more savings in the account and adjust our saving plan accordingly. How does grocery shopping evolve? Are summer foods in general more expensive than autumn cravings? So far, I just implemented the monthly comparison. 
+
+4. Unrelated to the coding site I consider changing the date when we're transferring the money. This would clean the data collection side tremendously. Currently, the rent is transferred towards the end of month which of course is not always a bank working day. This makes it look in the account as paying rent sometimes twice per month and sometimes not at all. Also the plus side comes in irregularly for the same reason. This messes up the final balance and makes it less informative.
+
+_Usually I would link my GitHub repo here. But as the Shiny app uses my personal finances, it is private._
