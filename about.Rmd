@@ -1,9 +1,15 @@
 ---
 title: "About this blog"
 description: |
-  Some additional details about the blog
+  Who I am and what I write about
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+
+My name is Constanze and I'm your host for this blog! Please look around, I hope you find something interesting. I write about __data science projects__ I work on, __fun side projects__ and __books__ I'm reading (#WhatIRead). 
+
+I work as a data analyst at 2° Investing Initiative, a think tank working to align financial markets with Paris climate goals. I started there as a working student in September 2018, while I studied economics at Humboldt-Universität zu Berlin. I graduated in July 2019 with a thesis on 'Sentiment Analysis in Finance' where I analyzed German mid caps' financial and CSR reports regarding their sentiment towards sustainability. 
+
+I'm coding (mostly) in R, occasionally SQL at work, and am currently learning Python. 
