@@ -40,4 +40,4 @@ The big advantage to keeping a cashbook in an application like this rather than 
 
 4. Unrelated to the coding site I consider changing the date when we're transferring the money. This would clean the data collection side tremendously. Currently, the rent is transferred towards the end of month which of course is not always a bank working day. This makes it look in the account as paying rent sometimes twice per month and sometimes not at all. Also the plus side comes in irregularly for the same reason. This messes up the final balance and makes it less informative.
 
-_Usually I would linked my GitHub repo here. But as the Shiny app uses my personal finances, it is private._
+_Usually I would link my GitHub repo here. But as the Shiny app uses my personal finances, it is private._

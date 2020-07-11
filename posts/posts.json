@@ -1,5 +1,21 @@
 [
   {
+    "path": "posts/2020-07-11-career/",
+    "title": "career",
+    "description": "Differences in DS ecosystem",
+    "author": [
+      {
+        "name": "Constanze",
+        "url": {}
+      }
+    ],
+    "date": "2020-07-11",
+    "categories": [],
+    "preview": {},
+    "last_modified": "2020-07-11T20:19:08+02:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/2020-07-06-cashbook/",
     "title": "How I automized my family's cashbook",
     "description": "I found manual cashbook writing tiring, so I created a R Shiny App.",
@@ -7,7 +23,7 @@
     "date": "2020-07-06",
     "categories": [],
     "preview": {},
-    "last_modified": "2020-07-06T23:38:08+02:00",
+    "last_modified": "2020-07-07T22:58:37+02:00",
     "input_file": {}
   },
   {
