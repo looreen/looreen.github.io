@@ -1,18 +1,13 @@
 [
   {
     "path": "posts/2020-07-11-career/",
-    "title": "career",
-    "description": "Differences in DS ecosystem",
-    "author": [
-      {
-        "name": "Constanze",
-        "url": {}
-      }
-    ],
+    "title": "Bulding a Data Science career is different in Europe than in the US",
+    "description": "Looking at the job and education markets - US to Europe",
+    "author": [],
     "date": "2020-07-11",
     "categories": [],
     "preview": {},
-    "last_modified": "2020-07-11T20:19:08+02:00",
+    "last_modified": "2020-07-12T09:51:42+02:00",
     "input_file": {}
   },
   {
