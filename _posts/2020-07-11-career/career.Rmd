@@ -1,0 +1,35 @@
+---
+title: "Bulding a Data Science career is different in Europe than in the US"
+description: |
+  Looking at the job and education markets - US to Europe
+date: 07-11-2020
+output:
+  distill::distill_article:
+    self_contained: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+I'm currently reading ["Building a Career in Data Science"](https://www.manning.com/books/build-a-career-in-data-science) by Emily Robinson and Jacqueline Nolis. It's covering almost every question that will come when you hear about Data Science and consider it as a career: Starting from what is this Data Science? How can I learn the skills? How do I get the first job? How could I use the first months the best?
+
+The book is really insightful. The tips on how to build a side project, how you prevent yourself from perfection, how you can improve your CV - I already started implementing them (this blog of course is part of it!). 
+
+However, halfway through reading it - especially the chapter on applying and interviewing for jobs - it occurred to me how American some of the tips are the both authors give. In some respect, I can already say that European and especially German Data Science and/or job market are different. The number one example is about negotiating. Emily and Jacqueline recommend to look at the overall compensation package instead on solely salary (great tip!). Part of this package could be \*drumrolls\* health insurance for you and your family. Wtf. 
+
+This is something that strikes me again and again. Health insurance at the mercy of your employer. Along similar lines is parental leave, parental benefits and maternity protection. In the German social security system these are basic allowances that follow clear rules on how much you are eligible to. What you would negotiate for are rather job tickets for public transport, an ebike, more holidays than the legal minimum and conference tickets, too. 
+
+But also in other respects, the context of the book seems very American. I try to list a few. This might extend with reading further. 
+
+- __Prerequisites__: First on the list is obviously graduate programmes. They are different in many respects. It's not that easy to do a data science related graduate programme as access is granted only if you hold a related undergraduate degree. Here in Berlin for example, Beuth-Hochschule offers a data science masters that you need to have 20 ECTS (more tan 10% of your undergrad points) in mathematics or statistics and 25 ECTS (nearly 14%) in computer science/programming/databases. So nearly 25% of your undergrad classes need to be related. Given the number of applicants to the few spots, odds are low you are allowed to make up for those classes while in the master programme. In the book, it sounds like these programmes are more open, with more opportunities to make up for what you missed so far. 
+
+- __Free education__: But - and this is also different - pursuing a degree has less opportunity costs. You still miss out (to some extent, see next section) some salary, but you won't pay for the university. In Germany, most programmes are free and even if there are tuition fees, they are far lower than in the US. Plus, you might be to Bafoeg, which is subsidies for students that need to be paid back only half and only up to a certain amount and only five years after you finished your first degree. You might have debt after doing a degree - but it nowhere near to what American graduates would have. 
+
+- __Being a working student__: In the German context, it seems far more common to work while studying. This can be exhausting and challenging but I found it also to be very useful. I earned okayish money during my degree. On top, in special employment schemes that are available to enrolled students only, you are allowed to work 20h a week during semesters and full time during breaks. Up to a certain age, health insurance is really cheap. Great thing about this arrangement is that it is mostly used in jobs that are already related to later careers. During my first degree, I worked in TV production company, gaining work experience for a career in journalism. During my second degree I worked in an NGO supporting the data engineers. As these employments are rather long term (one year+), it gives you more planning security and more insights than an internship. And, quite often, they result in a position to write a thesis or even a full time job. 
+
+- __Love for certification__: One major downside - and I'm not 100% sure how true this is for Data Science - in the German job market compared to the American is the love for certification. It is hard to get into jobs having side projects as only qualification, even though they better prove you're able to do a job than certification certainly would, in my opinion. Having some sort of certificate, from an online course, a bootcamp, a degree, whatever, seems to satisfy recruiters. Again said: This was my experience in other fields. I can't really make statements about the data science field, yet. I am more than happy to revise my impression here!
+
+This list might be extended. But nevertheless, if you are starting in Data Science - please make sure you read [Emily's and Jacqueline's book](https://www.manning.com/books/build-a-career-in-data-science), it is super helpful!
+
+
