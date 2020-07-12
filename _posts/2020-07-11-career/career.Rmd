@@ -12,7 +12,7 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-I'm currently reading ["Building a Career in Data Science"](https://www.manning.com/books/build-a-career-in-data-science) by Emily Robinson and Jacqueline Nolis. It's covering almost every question that will come when you hear about Data Science and consider it as a career: Starting from what is this Data Science? How can I learn the skills? How do I get the first job? How could I use the first months the best?
+I'm currently reading ["Building a Career in Data Science"](https://www.manning.com/books/build-a-career-in-data-science) by Emily Robinson and Jacqueline Nolis. It's covering almost every question that will come up when you hear about Data Science and consider it as a career: Starting from what is this Data Science? How can I learn the skills? How do I get the first job? How could I use the first months the best?
 
 The book is really insightful. The tips on how to build a side project, how you prevent yourself from perfection, how you can improve your CV - I already started implementing them (this blog of course is part of it!). 
 
