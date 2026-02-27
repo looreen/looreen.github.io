@@ -79,7 +79,11 @@ button:hover {
   color: inherit;
 }
 
-
+h2 {
+    margin-top: 20px;
+    padding: 10px;
+  margin-bottom: 0.01rem;
+}
 
 a {
   color: white;
