@@ -1,6 +1,6 @@
 .img-sizing {
-    max-width: 40%;
-    max-height: 40%;
+  max-width: 40%;
+  max-height: 40%;
 }
 
 .circular {
@@ -8,6 +8,8 @@
   height: 200px;      /* Must match width */
   border-radius: 50%;
   overflow: hidden;   /* Enables circular crop */
+    object-fit: cover;
+
 }
 
 .circular img {
@@ -15,4 +17,68 @@
   height: 100%;
   object-fit: cover;      /* Fills circle without distortion */
   object-position: center; /* <-- Forces crop from the center */
+  align-items: center;
+}
+
+body {
+  background-color: #E9E841;
+  margin: 0;
+  font-family: sans-serif;
+
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertikal */
+  min-height: 100vh;       /* damit der Body volle Höhe hat */
+}
+
+.card {
+  background-color: #E0218A;
+  width: 350px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* <-- Zentriert ALLES horizontal */
+  text-align: center;
+  color:white;
+}
+
+.button-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button-row button {
+  font-family: sans-serif;
+  align-self: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  border: 0;
+}
+
+button {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+
+}
+
+button :hover {
+  background-color: yellow;
+}
+
+a {
+  color: white;
+  text-align: left;
+}
+
+li {
+  align-items: flex-end;
+  text-align: left;
 }
